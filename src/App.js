@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import data from './Data';
-// import SingleQuestion from './Question';
+import Data from './Data';
+import SingleQuestion from './Question';
 
 function App() {
-  return <h2>accordion project setup</h2>;
+  const [questions, setQuestions] = useState(Data)
+
+  return <main>
+    < div className="container">
+      <h3>FAQ and Answers About Login</h3>
+    </div>
+  </main>;
 }
 
 export default App;
